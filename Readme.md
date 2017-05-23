@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Евстигнеева](https://up.htmlacademy.ru/adaptive/11/user/396675).
-* Наставник: `Неизвестно`.
+* Наставник: Никита Рогатнев.
 
 ---
 
