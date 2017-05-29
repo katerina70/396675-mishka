@@ -8,17 +8,17 @@
 
 <body>
 	<header class="page-header">
-		<div class="page-header__logo page-header__logo--hover page-header__logo--down">
+		<div class="page-header__logo">
 			<a href="index.html"> <img src="" width="" height="" alt="Мишка"> </a>
 		</div>
 		<div class="main-nav__wrapper">
 			<nav class="main-nav">
 				<span class="main-nav__toogler"></span>
 				<ul class="main-nav__list">
-					<li class="main-nav__big-item main-nav__big-item--hover main-nav__big-item--active"><a href="catalog.html">Каталог товаров</a></li>
-					<li class="main-nav__big-item main-nav__big-item--hover main-nav__big-item--active"><a>Вязание на заказ</a></li>
-					<li class="main-nav__search main-nav__search--hover main-nav__search--active"><a href=""><span></span>Поиск по сайту</a></li>
-					<li class="main-nav__cart main-nav__cart--hover main-nav__cart--active"><a href=""><span></span>Корзина: пока пуста</a></li>
+					<li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+					<li class="main-nav__item"><a>Вязание на заказ</a></li>
+					<li class="main-nav__item main-nav__item--search"><a href=""><span></span>Поиск по сайту</a></li>
+					<li class="main-nav__item main-nav__item--cart"><a href=""><span></span>Корзина: пока пуста</a></li>
 
 				</ul>
 			</nav>
@@ -62,16 +62,12 @@
 			<div class="order-form-phone">
 				<h2 class="order-form-phone__header">Тел</h2>
 				<label for="phone-number-field">
-            <input type="tel" pattern="\+7\\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" name="phone-number" id="phone-number-field" placeholder="+7 XXX XX XX*" required> </label>
-				<span class="phone">Телефон</span>
-
+            <input type="tel" pattern="\+7\\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" name="phone-number" id="phone-number-field" placeholder="+7 XXX XX XX*" required></label>
 			</div>
 			<div class="order-form-email">
 				<h2 class="order-form-email__header">E-mail</h2>
 				<label for="email-field">
 				<input type="email" name="email" id="email-field" placeholder="Ваш Email*" required> </label>
-				<span class="email">Конверт</span>
-
 			</div>
 			<div class="order-form-additional">
 				<h2 class="order-form-additional__header">Доп</h2>
@@ -89,7 +85,7 @@
 			<a class="social-btn social-btn--twitter" href="#">Твиттер</a>
 		</div>
 		<div class="footer__copyright">
-			<a class="copyright-link copyright-link--hover copyright-link--active " href="https://htmlacademy.ru/intensive/adaptive">Разработано <span>HTML Academy</span></a>
+			<a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span>HTML Academy</span></a>
 		</div>
 
 	</footer>
