@@ -8,17 +8,17 @@
 
 <body>
 	<header class="page-header">
-		<div class="page-header__logo page-header__logo--hover page-header__logo--down">
+		<div class="page-header__logo">
 			<a href="index.html"> <img src="" width="" height="" alt="Мишка"> </a>
 		</div>
 		<div class="main-nav__wrapper">
 			<nav class="main-nav">
 				<span class="main-nav__toogler"></span>
 				<ul class="main-nav__list">
-					<li class="main-nav__big-item main-nav__big-item--hover main-nav__big-item--active"><a>Каталог товаров</a></li>
-					<li class="main-nav__big-item main-nav__big-item--hover main-nav__big-item--active"><a href="form.html">Вязание на заказ</a></li>
-					<li class="main-nav__search main-nav__search--hover main-nav__search--active"><a href=""><span></span>Поиск по сайту</a></li>
-					<li class="main-nav__cart main-nav__cart--hover main-nav__cart--active"><a href=""><span></span>Корзина: пока пуста</a></li>
+					<li class="main-nav__item "><a>Каталог товаров</a></li>
+					<li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+					<li class="main-nav__item main-nav__item--search"><a href="#"><span></span>Поиск по сайту</a></li>
+					<li class="main-nav__item main-nav__item--cart"><a href="#"><span></span>Корзина: пока пуста</a></li>
 
 				</ul>
 			</nav>
@@ -29,48 +29,51 @@
 		<h1 class="catalog-header__title">Каталог товаров</h1>
 	</section>
 	<section class="catalog-list">
-		<a class="catalog-item catalog-item--hover catalog-item--active" href="">
-			<div class="catalog-item__image">
+		<article class="catalog-item">
+			<a class="catalog-item__img" href="#">
 				<img src="" width="" height="" alt="Зайчик-попрыгайчик">
-			</div>
+			</a>
 			<div class="catalog-item__feature">
-				<h2>Зайчик-попрыгайчик</h2>
-				<p>Рост 30см, вес 200г</p>
+				<a href="#">
+					<h2>Зайчик-попрыгайчик</h2>
+				</a>
+				<span>Рост 30см, вес 200г</span>
 			</div>
-		</a>
-		<div class="catalog-item__price">
-			<span> 1200 руб.</span>/*
-			<a class="cart-btn" href="#"><span>В корзину</span></a>*/
-		</div>
-
-		<a class="catalog-item catalog-item--hover catalog-item--active" href="#">
-			<div class="catalog-item__image">
+			<div class="catalog-item__price">
+				<span> 1200 руб.</span>/*
+				<a class="cart-btn" href="#"></a>
+			</div>
+		</article>
+		<article class="catalog-item">
+			<a class="catalog-item__img" href="#">
 				<img src="" width="" height="" alt="Корзинка для белья">
-			</div>
+			</a>
 			<div class="catalog-item__feature">
-				<h2>Корзинка для белья</h2>
-				<p>Диаметр 15см, высота 10см</p>
+				<a href="#">
+					<h2>Корзинка для белья</h2>
+				</a>
+				<span>Диаметр 15см, высота 10см</span>
 			</div>
-		</a>
-		<div class="catalog-item__price">
-			<span> 690 руб.</span>
-			<a class="cart-btn" href="#"><span>В корзину</span></a>
-		</div>
-
-		<a class="catalog-item catalog-item--hover catalog-item--active" href="#">
-			<div class="catalog-item__image">
+			<div class="catalog-item__price">
+				<span> 690 руб.</span>
+				<a class="cart-btn" href="#"></a>
+			</div>
+		</article>
+		<article class="catalog-item">
+			<a class="catalog-item__img" href="#">
 				<img src="" width="" height="" alt="Большая корзина для игрушек">
-			</div>
+			</a>
 			<div class="catalog-item__feature">
-				<h2>Большая корзина для игрушек</h2>
-				<p>Диаметр 30см, высота 30см</p>
+				<a href="#">
+					<h2>Большая корзина для игрушек</h2>
+				</a>
+				<span>Диаметр 30см, высота 30см</span>
 			</div>
-		</a>
-		<div class="catalog-item__price">
-			<span> 1500 руб.</span>
-			<a class="cart-btn" href="#"><span>В корзину</span></a>
-		</div>
-
+			<div class="catalog-item__price">
+				<span> 1500 руб.</span>
+				<a class="cart-btn" href="#"></a>
+			</div>
+		</article>
 	</section>
 	<section class="video-player">
 		<h2 class="video-player__title">Процесс производства</h2>
@@ -89,7 +92,7 @@
 			<a class="social-btn social-btn--twitter" href="#">Твиттер</a>
 		</div>
 		<div class="footer__copyright">
-			<a class="copyright-link copyright-link--hover copyright-link--active " href="https://htmlacademy.ru/intensive/adaptive">Разработано <span>HTML Academy</span></a>
+			<a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span>HTML Academy</span></a>
 		</div>
 	</footer>
 </body>
