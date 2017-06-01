@@ -4,9 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Мишка</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body>footer
 	<header class="page-header">
 		<div class="page-header__logo">
 			<a href="index.html"> <img src="" width="" height="" alt="Мишка"> </a>
@@ -28,55 +31,57 @@
 		<h1 class="form-header__title">Вязание на заказ</h1>
 	</section>
 	<section class="order-form">
-		<p>Мы будем рады воплотить в жизнь ваши пожелания. Заполните простую форму заказа и мы свяжемся с вами, чтобы уточить детали.</p>
-		<form action="https://echo.htmlacademy.ru" method="get">
-			<div class="order-form-type">
-				<h2 class="order-form-type__header">Тип</h2>
-				<ul class="order-form-type__list">
-					<li><input type="checkbox" id="decoration" name="interior-decoration" checked><label for="decoration">Аксессуар для интерьера</label></li>
-					<li><input type="checkbox" id="toy" name="toy-item"><label for="toy">Игрушка</label></li>
-				</ul>
-			</div>
-			<div class="order-form-color">
-				<h2 class="order-form-color__header">Цвет</h2>
-				<ul class="order-form-color__list">
-					<li><input type="checkbox" id="white" name="white" checked><label for="white">Белый</label></li>
-					<li><input type="checkbox" id="grey" name="grey" checked><label for="grey">Серый</label></li>
-					<li><input type="checkbox" id="tiffany" name="tiffany"><label for="tiffany">Тиффани</label></li>
-					<li><input type="checkbox" id="black" name="black"><label for="black">Черный</label></li>
-					<li><input type="checkbox" id="pink" name="pink"><label for="pink">Розовый</label></li>
-					<li><input type="checkbox" id="orange" name="orange"><label for="orange">Оранжевый</label></li>
-				</ul>
-			</div>
-			<div class="order-form-name">
-				<h2 class="order-form-name__header">ФИО</h2>
+		<div class="order-form__wrapper">
+			<p>Мы будем рады воплотить в жизнь ваши пожелания. Заполните простую форму заказа и мы свяжемся с вами, чтобы уточить детали.</p>
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<div class="order-form-type">
+					<h2 class="order-form-type__header">Тип</h2>
+					<ul class="order-form-type__list">
+						<li><input type="checkbox" id="decoration" name="interior-decoration" checked><label for="decoration">Аксессуар для интерьера</label></li>
+						<li><input type="checkbox" id="toy" name="toy-item"><label for="toy">Игрушка</label></li>
+					</ul>
+				</div>
+				<div class="order-form-color">
+					<h2 class="order-form-color__header">Цвет</h2>
+					<ul class="order-form-color__list">
+						<li><input type="checkbox" id="white" name="white" checked><label for="white">Белый</label></li>
+						<li><input type="checkbox" id="grey" name="grey" checked><label for="grey">Серый</label></li>
+						<li><input type="checkbox" id="tiffany" name="tiffany"><label for="tiffany">Тиффани</label></li>
+						<li><input type="checkbox" id="black" name="black"><label for="black">Черный</label></li>
+						<li><input type="checkbox" id="pink" name="pink"><label for="pink">Розовый</label></li>
+						<li><input type="checkbox" id="orange" name="orange"><label for="orange">Оранжевый</label></li>
+					</ul>
+				</div>
+				<div class="order-form-name">
+					<h2 class="order-form-name__header">ФИО</h2>
 
-				<label for="first-name-field">Имя:
+					<label for="first-name-field">Имя:
             <input type="text" name="first-name" id="first-name-field" placeholder="Введите ваше имя*"> </label>
-				<label for="surname-field">Фамилия:
+					<label for="surname-field">Фамилия:
             <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*"> </label>
-				<label for="patronymic-name-field">Отчество:
+					<label for="patronymic-name-field">Отчество:
             <input type="text" name="patronymic-name" id="patronymic-name-field" placeholder="Отчество, если желаете"> </label>
 
-			</div>
-			<div class="order-form-phone">
-				<h2 class="order-form-phone__header">Тел</h2>
-				<label for="phone-number-field">
+				</div>
+				<div class="order-form-phone">
+					<h2 class="order-form-phone__header">Тел</h2>
+					<label for="phone-number-field">
             <input type="tel" pattern="\+7\\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" name="phone-number" id="phone-number-field" placeholder="+7 XXX XX XX*" required></label>
-			</div>
-			<div class="order-form-email">
-				<h2 class="order-form-email__header">E-mail</h2>
-				<label for="email-field">
+				</div>
+				<div class="order-form-email">
+					<h2 class="order-form-email__header">E-mail</h2>
+					<label for="email-field">
 				<input type="email" name="email" id="email-field" placeholder="Ваш Email*" required> </label>
-			</div>
-			<div class="order-form-additional">
-				<h2 class="order-form-additional__header">Доп</h2>
-				<label for="additional-field">
+				</div>
+				<div class="order-form-additional">
+					<h2 class="order-form-additional__header">Доп</h2>
+					<label for="additional-field">
 				<textarea name="additional" id="additional-field" rows="10">Опишите все ваши пожелания к заказу</textarea></label>
-			</div>
-			<p class="order-form__comments"><sup>*</sup>Поля обязательны для заполнения</p>
-			<input type="submit" value="Отправить заказ" name="order">
-		</form>
+				</div>
+				<p class="order-form__comments"><sup>*</sup>Поля обязательны для заполнения</p>
+				<input type="submit" value="Отправить заказ" name="order">
+			</form>
+		</div>
 	</section>
 	<footer class="footer">
 		<div class="footer__social">
