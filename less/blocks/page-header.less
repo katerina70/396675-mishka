@@ -1,8 +1,52 @@
 .page-header {
 	width: 100%;
-	border-bottom: @palette-secondary;
+	margin: 0;
 }
 
-.page-header__wrapper {
-	margin: 0 auto;
+@media (min-width:1250px) {
+	.page-header__wrapper {
+		width: 1250px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.page-header__logo {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+}
+
+@media(min-width: 768px)and(max-width: 1249px) {
+	.page-header__wrapper {
+		width: 768px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.page-header__logo {
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		left: 50px;
+	}
+}
+
+@media (max-width:767px) {
+	.page-header {
+		border-bottom: @palette-secondary;
+	}
+	.page-header__wrapper {
+		width: 320px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.page-header__logo {
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
 }

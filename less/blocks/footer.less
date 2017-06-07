@@ -1,19 +1,100 @@
-.footer {
-	width: 100%;
-	background-color: @palette-secondary-light;
-}
-
-.footer-wrapper {
-	.center-block;
-}
-
-.copyright-link {
-	text-decoration: none;
-	font-family: @font-family;
-	color: @text-color-base;
-	font-size: @font-size-promo;
-	font-weight: bold;
-	span {
-		font-size: 0;
+	.footer {
+		width: 100%;
+		background-color: @palette-secondary-light;
 	}
-}
+	
+	@media (max-width: 767px) {
+		.footer-wrapper {
+			width: 320px;
+			min-height: 145px;
+			margin: 0 auto;
+			padding-left: 30px;
+			padding-right: 50px;
+			text-align: center;
+		}
+		.footer__logo {
+			height: 0;
+			overflow: hidden;
+		}
+		.footer__social {
+			padding: 25px 0;
+			border-bottom: #e5e5e5 1px solid;
+		}
+		.footer__copyright {
+			padding: 25px 0;
+		}
+		.copyright-link {
+			text-decoration: none;
+			font-family: @font-family;
+			color: @text-color-base;
+			font-size: @font-size-promo;
+			font-weight: bold;
+			span {
+				font-size: 0;
+			}
+		}
+	}
+	
+	@media (min-width: 1250px) {
+		.footer-wrapper {
+			width: 1250px;
+			min-height: 145px;
+			margin: 0 auto;
+			padding-left: 100px;
+			padding-right: 100px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.footer__logo {
+			width: 350px;
+		}
+		.footer__social {
+			width: 350px;
+		}
+		.footer__copyright {
+			width: 350px;
+		}
+		.copyright-link {
+			text-decoration: none;
+			font-family: @font-family;
+			color: @text-color-base;
+			font-size: @font-size-promo;
+			font-weight: bold;
+			span {
+				font-size: 0;
+			}
+		}
+	}
+	
+	@media(min-width: 768px)and(max-width: 1249px) {
+		.footer-wrapper {
+			width: 768px;
+			min-height: 145px;
+			margin: 0 auto;
+			padding-left: 50px;
+			padding-right: 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.footer__logo {
+			width: 222px;
+		}
+		.footer__social {
+			width: 224px;
+		}
+		.footer__copyright {
+			width: 222px;
+		}
+		.copyright-link {
+			text-decoration: none;
+			font-family: @font-family;
+			color: @text-color-base;
+			font-size: @font-size-promo;
+			font-weight: bold;
+			span {
+				font-size: 0;
+			}
+		}
+	}
