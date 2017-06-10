@@ -1,12 +1,43 @@
 .order-form {
 	width: 100%;
+	margin: 0;
 }
 
-.order-form__wrapper {
-	.center-block;
-	p {
+@media (max-width: 767px) {
+	.order-form__promo {
+		box-sizing: border-box;
+		width: 320px;
+		margin: 0 auto;
+		padding: 0 30px;
+		padding-top: 30px;
 		font-family: @font-family;
-		font-size: @font-size-min;
-		line-height: @line-height-promo;
+		font-size: 13px;
+		line-height: 24px;
+	}
+}
+
+@media(min-width:1250px) {
+	.order-form__promo {
+		box-sizing: border-box;
+		width: 1250px;
+		margin: 0 auto;
+		padding: 0 225px;
+		padding-top: 135px;
+		font-family: @font-family;
+		font-size: @font-size-base;
+		line-height: @line-height-title;
+	}
+}
+
+@media(min-width: 768px)and(max-width: 1249px) {
+	.order-form__promo {
+		box-sizing: border-box;
+		width: 768px;
+		margin: 0 auto;
+		padding: 0 50px;
+		padding-top: 80px;
+		font-family: @font-family;
+		font-size: @font-size-base;
+		line-height: @line-height-title;
 	}
 }

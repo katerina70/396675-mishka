@@ -1,8 +1,82 @@
-.order-form-additional__header {
-	font-family: @font-family;
-	font-size: @font-size-base;
-	line-height: @line-height-base;
-	color: @palette-primary;
-	font-weight: bold;
-	text-transform: uppercase;
-}
+	@media (max-width: 767px) {
+		.order-form-additional {
+			box-sizing: border-box;
+			width: 320px;
+			margin: 0 auto;
+			padding: 30px;
+		}
+		.order-form-additional__header {
+			width: 167px;
+			margin: 0;
+			margin-bottom: 25px;
+			padding: 0;
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @palette-primary;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.additional-field {
+			display: block;
+			width: 260px;
+			height: 140px;
+		}
+	}
+	
+	@media(min-width: 768px)and(max-width: 1249px) {
+		order-form-additional {
+			box-sizing: border-box;
+			width: 768px;
+			margin: 0 auto;
+			padding: 50px;
+			display: flex;
+			align-content: center;
+		}
+		.order-form-additional__header {
+			width: 167px;
+			margin: 0;
+			padding: 0;
+			padding-top: 70px;
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @palette-primary;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.additional-field {
+			display: block;
+			width: 500px;
+			height: 140px;
+		}
+	}
+	
+	@media (min-width: 1250px) {
+		.order-form-additional {
+			box-sizing: border-box;
+			width: 1250px;
+			margin: 0 auto;
+			padding: 50px;
+			display: flex;
+			align-content: center;
+		}
+		.order-form-additional__header {
+			width: 175px;
+			margin: 0;
+			padding: 0;
+			padding-top: 15px;
+			text-align: center;
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @palette-primary;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.additional-field {
+			display: block;
+			width: 700px;
+			height: 140px;
+		}
+	}
