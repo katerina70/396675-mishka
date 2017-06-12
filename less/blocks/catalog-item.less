@@ -1,29 +1,204 @@
-.catalog-item__wrapper {
-	display: block;
-	.center-block;
-	border: @border-style-primary;
+.catalog-item {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-.catalog-item__feature {
-	border-bottom: @border-style-primary;
-	padding: 30px 0;
-	h1 {
+@media (max-width: 767px) {
+	.catalog-item__img {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		img {
+			display: block;
+			margin: 0;
+			width: 260px;
+			height: 195px;
+		}
+	}
+	.catalog-item__wrapper {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 30px;
+		border: @border-style-primary;
+	}
+	.catalog-item__feature {
+		padding: 0;
+		margin: 0;
+		border-bottom: @border-style-primary;
+		h1 {
+			margin: 0;
+			padding: 0;
+			padding-top: 30px;
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-promo;
+		}
+		span {
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-bottom: 25px;
+			font-family: @font-family;
+			font-size: @font-size-paragraph-small;
+			line-height: @line-height-title;
+		}
+	}
+	.catalog-item__price {
+		margin: 0;
+		padding: 0;
+		span {
+			display: block;
+			margin: 0;
+			padding: 25px 0;
+		}
+		font-family: @font-family;
+		font-size: @font-size-paragraph;
+		line-height: @line-height-promo;
+		font-weight: bold;
+		color: #444444;
+	}
+}
+
+@media(min-width: 768px)and(max-width: 1249px) {
+	.catalog-item {
+		width: 100%;
+		min-height: 333px;
+		margin: 0;
+		margin-bottom: 55px;
+		padding: 0;
+		display: flex;
+	}
+	.catalog-item__img {
+		display: block;
+		margin: 0;
+		width: 334px;
+		min-height: 336px;
+		img {
+			display: block;
+			margin: 0;
+			width: 334px;
+			height: 336px;
+		}
+	}
+	.catalog-item__wrapper {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 30px;
+		border: @border-style-primary;
+	}
+	.catalog-item__feature {
+		padding: 0;
+		margin: 0;
+		border-bottom: @border-style-primary;
+		h1 {
+			margin: 0;
+			padding: 0;
+			padding-top: 30px;
+			font-family: @font-family;
+			font-size: @font-size-base-big;
+			line-height: @line-height-promo;
+		}
+		span {
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-bottom: 180px;
+			font-family: @font-family;
+			font-size: @font-size-paragraph;
+			line-height: @line-height-title;
+		}
+	}
+	.catalog-item__feature--third {
+		span {
+			padding-bottom: 160px;
+		}
+	}
+	.catalog-item__price {
+		margin: 0;
+		padding: 0;
+		span {
+			display: block;
+			margin: 0;
+			padding: 20px 0;
+		}
 		font-family: @font-family;
 		font-size: @font-size-base;
 		line-height: @line-height-promo;
-	}
-	span {
-		font-family: @font-family;
-		font-size: @font-size-min;
-		line-height: @line-height-promo;
-		color: @text-color-light;
+		font-weight: bold;
+		color: #444444;
 	}
 }
 
-.catalog-item__price {
-	padding: 30px 0;
-	font-family: @font-family;
-	font-size: @font-size-paragraph;
-	line-height: @line-height-promo;
-	font-weight: bold;
+@media (min-width: 1250px) {
+	.catalog-item {
+		width: 316px;
+		min-height: 658px;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.catalog-item__img {
+		display: block;
+		margin: 0;
+		width: 316px;
+		min-height: 464px;
+		img {
+			display: block;
+			margin: 0;
+			width: 316px;
+			height: 464px;
+		}
+	}
+	.catalog-item__wrapper {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 30px;
+		border: @border-style-primary;
+	}
+	.catalog-item__feature {
+		padding: 0;
+		margin: 0;
+		border-bottom: @border-style-primary;
+		h1 {
+			margin: 0;
+			padding: 0;
+			padding-top: 30px;
+			font-family: @font-family;
+			font-size: @font-size-base-big;
+			line-height: @line-height-promo;
+		}
+		span {
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-bottom: 40px;
+			font-family: @font-family;
+			font-size: @font-size-paragraph;
+			line-height: @line-height-title;
+		}
+	}
+	.catalog-item__feature--third {
+		span {
+			padding-bottom: 16px;
+		}
+	}
+	.catalog-item__price {
+		margin: 0;
+		padding: 0;
+		span {
+			display: block;
+			margin: 0;
+			padding: 25px 0;
+		}
+		font-family: @font-family;
+		font-size: @font-size-base;
+		line-height: @line-height-promo;
+		font-weight: bold;
+		color: #444444;
+	}
 }

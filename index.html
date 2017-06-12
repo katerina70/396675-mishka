@@ -17,12 +17,18 @@
 			</div>
 			<div class="main-nav__wrapper">
 				<nav class="main-nav">
-					<span class="main-nav__toogler"></span>
+					<div class="main-nav__top"><span class="main-nav__toogler"></span></div>
 					<ul class="main-nav__list">
 						<li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
 						<li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-						<li class="main-nav__item main-nav__item--search"><a href="#"><span></span>Поиск по сайту</a></li>
+						<li class="main-nav__item main-nav__item--search"><a href="#"><span>Поиск по сайту</span></a></li>
 						<li class="main-nav__item main-nav__item--cart"><a href="#"><span></span>Корзина: пока пуста</a></li>
+						<li class="main-nav__item " ><a class="main-nav__item-big" href="#">Новые поступления</a></li>
+						<li class="main-nav__item"><a class="main-nav__item-big" href="catalog.html">Распродажа</a></li>
+						<li class="main-nav__item">
+							<a class="main-nav__item-big">Бесплатная доставка по России</a>
+						</li>
+
 
 					</ul>
 				</nav>
@@ -30,13 +36,20 @@
 		</div>
 	</header>
 	<section class="promo">
-		<div class="promo-wrapper">
+		<div class="promo__wrapper">
 			<h2 class="promo__title">Милые штуки ручной работы для дома</h2>
 			<ul class="promo__list">
-				<li class="promo__item promo__item--light"><a href="#">
-			Предметы интерьера</a></li>
+				<li class="promo__item promo__item--light">
+					<a href="#">
+						<h3 class="promo__title-item">
+							Предметы интерьера</h3>
+					</a>
+				</li>
 				<li class="promo__item promo__item--dark">
-					<a href="#">Детские игрушки	</a></li>
+					<a href="#">
+						<h3 class="promo__title-item">Детские игрушки</h3>
+					</a>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -60,11 +73,9 @@
 				</tr>
 
 			</table>
-			<div class="week-top__img">
-				<img src="" width="" height="" alt="Вязаные корзинки">
-			</div>
 			<div class="week-top__price">Цена 990 руб.</div>
-			<a class="week-top-btn" href="#">Заказать</a>
+			<div class="week-top__order"><a class="week-top-btn" href="#">Заказать</a>
+			</div>
 		</div>
 	</section>
 	<section class="advantages">
@@ -85,10 +96,10 @@
 		<div class="review-wrapper">
 			<h2 class="review__title">Отзывы</h2>
 			<p class="review__content">Я - молодая мама, но все равно фоторафии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-			<span class="review__sign">Анастасия Красильникова</span>
-			<a class="review__link" href="#">@misssssiskras</a>
-			<button class="review-prev" type="button" name="arrow-left">Предыдущий отзыв</button>
-			<button class="review-next" type="button" name="arrow-write">Следующий отзыв</button>
+			<div class="rewiew__author"><span class="review__sign">Анастасия Красильникова</span>
+				<a class="review__link" href="#">@misssssiskras</a></div>
+			<div class="review__toogle"><button class="review-prev" type="button" name="arrow-left">Предыдущий отзыв</button>
+				<button class="review-next" type="button" name="arrow-write">Следующий отзыв</button></div>
 			<a class="review-btn" href="reviews.html">Написать</a>
 		</div>
 	</section>
@@ -96,18 +107,21 @@
 		<div class="contacts-wrapper">
 			<h2 class="contacts__title">Контакты</h2>
 			<ul class="contacts__list">
-				<li class="contacts__item"> email:
+				<li class="contacts__item"><span>email:</span>
 					<a href="">info@mimimishkashop.ru</a> </li>
-				<li class="contacts__item">Адрес:
-					<p>г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</p>
+				<li class="contacts__item"><span>адрес:</span>
+					<p>г.Санкт-Петербург, <br> ул.Большая Конюшенная, д.19/8, офис 101</p>
 				</li>
 			</ul>
-			<div class="contacts__map">Карта проезда</div>
+			<div class="contacts__map"><img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта Проезда"></div>
 			<a class="contacts__btn" href="#">Напишите нам</a>
 		</div>
 	</section>
 	<footer class="footer">
 		<div class="footer-wrapper">
+			<div class="footer__logo">
+				<img src="" width="" height="" alt="Лототип">
+			</div>
 			<div class="footer__social">
 				<a class="social-btn social-btn--instagram" href="#">Инстаграм</a>
 				<a class="social-btn social-btn--facebook" href="#">Фейсбук</a>

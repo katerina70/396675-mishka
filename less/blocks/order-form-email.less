@@ -1,8 +1,90 @@
-.order-form-email__header {
-	font-family: @font-family;
-	font-size: @font-size-base;
-	line-height: @line-height-base;
-	color: @palette-primary;
-	font-weight: bold;
-	text-transform: uppercase;
-}
+	@media (max-width: 767px) {
+		.order-form-phone__wrapper {
+			width: 100%;
+		}
+		.order-form-email {
+			box-sizing: border-box;
+			width: 320px;
+			margin: 0 auto;
+			padding: 30px;
+			padding-bottom: 0;
+		}
+		.order-form-email__header {
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @palette-primary;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.order-form-email__email {
+			display: block;
+			width: 260px;
+			height: 52px;
+		}
+	}
+	
+	@media(min-width: 768px)and(max-width: 1249px) {
+		.order-form-email__wrapper {
+			width: 100%;
+			background-color: @palette-secondary-light;
+		}
+		.order-form-email {
+			box-sizing: border-box;
+			width: 768px;
+			margin: 0 auto;
+			padding: 50px;
+			padding-top: 0;
+			display: flex;
+			align-content: center;
+		}
+		.order-form-email__header {
+			width: 167px;
+			text-align: center;
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @palette-primary;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.order-form-email__email {
+			display: block;
+			width: 501px;
+			height: 60px;
+		}
+	}
+	
+	@media(min-width:1250px) {
+		.order-form-email__wrapper {
+			width: 100%;
+			background-color: @palette-secondary-light;
+		}
+		.order-form-email {
+			box-sizing: border-box;
+			width: 1250px;
+			margin: 0 auto;
+			padding: 50px;
+			padding-top: 0;
+			display: flex;
+			align-content: center;
+		}
+		.order-form-email__header {
+			width: 175px;
+			margin: 0;
+			padding: 0;
+			padding-top: 15px;
+			text-align: center;
+			font-family: @font-family;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @palette-primary;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.order-form-email__email {
+			display: block;
+			width: 700px;
+			height: 60px;
+		}
+	}
